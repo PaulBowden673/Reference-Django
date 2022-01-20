@@ -9,16 +9,15 @@
 </head>
 
 <body>
-    <h1>Add a Todo item </h1>
+    <h1>Edit a ToDo Item:</h1>
     <form method="POST" action="add">
         {% csrf_token %}
         {{ form.as_p }}
-
         <div>
             <p>
-            <button toye="submit">Add Item</button>
+                <button type="submit">Update Item</button>
             </p>
         </div>
-    </form>  
+    </form>
 </body>
 </html>
